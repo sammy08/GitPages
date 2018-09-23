@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="loginStyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="container">
+			<form id="formKing" action="login.php" method="POST">
+				<div class="img">
+					<img  id="me" class="btn btn-primary hvr-buzz-out" src="me.jpg" alt="Samuel Santana, Estudante de Programação e jovem Sonhador">
+				</div>
+				<h1>Entre no Reino Encantado</h1>
+				<hr>
+          			<input type="text" id="email" name="email" placeholder="Seu Email" required><!--input-->
+					<div class="line-box">
+						<div class="line"></div>
+					</div>
+					<input type="password" id="password" placeholder="Sua Senha" name="pass" required>
+					<div class="line-box" style="display: none;">
+						<div class="line"></div>
+					</div>
+					<button type="submit">Continuar</button>
+			</form>
+	</div>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+  <script src="Validacao.js"></script>
+  <script src="button.js"></script>
+  <srcipt src="input.js"></srcipt>
+  <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+</body>
+</html>
