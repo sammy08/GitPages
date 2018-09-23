@@ -1,0 +1,53 @@
+@import "resets.css";
+@import "menu.css";
+@import "button.css";
+body{
+  background: -moz-linear-gradient(left, #5c2e60 21%, #e55e49 76%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #5c2e60 21%,#e55e49 76%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #5c2e60 21%,#e55e49 76%); 
+  background-repeat: repeat;
+  font-family: 'Roboto', sans-serif;
+	color:white;
+}
+h1{
+	font-size: 2em;
+	font-weight: 100;
+	text-align: center;
+}
+.body--paragraph{
+	text-align: center;
+	font-size: 1.6rem;
+	font-weight: 100;
+  margin: 16px;
+	color:white;
+}
+hr{
+	border: 0.5spx solid #fff;
+	width: 20%;
+}
+.container{padding-top: 5%;}
+
+img{
+  margin: 8px;
+	width: 100px;
+	border-radius: 50%;
+	border: 3px solid #000;
+	cursor: pointer;
+	animation-name: MoveImg;
+	animation-duration: 0.5s;
+}
+@media  only screen and (max-width:768px){
+  body{background: #e55e49;}
+  
+  img{width:30%;}
+  
+  .container{padding-top: 10%;}
+
+  button{display: none;}
+  
+  p{font-size: 1.2rem;}
+  
+  hr{ width: 40%;}
+}
+
+
