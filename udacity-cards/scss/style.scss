@@ -1,0 +1,67 @@
+$family:"Open Sans",sans-serif;
+//resets
+*{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+a{
+  text-decoration:none;
+}
+li{
+  float:left;
+}
+li {
+  a{
+    padding:0.75rem;
+    color:#525c65;
+  }
+}
+body{ 
+  font:{
+    family:$family;
+  }
+}
+.panel{
+  padding:2rem;
+  -webkit-box-shadow: 3px 5px 45px -16px rgba(143,127,143,1);
+-moz-box-shadow: 3px 5px 45px -16px rgba(143,127,143,1);
+box-shadow: 3px 5px 45px -16px rgba(143,127,143,1);
+}
+.body-section{
+  display:flex;
+  flex:200px;
+}
+%card{
+  padding:1rem;
+  margin:1rem;
+  margin-top:5%;
+  width:30%;
+  height:70vh;
+  -webkit-box-shadow: 2px 6px 53px -14px       rgba(143,127,143,1);
+-moz-box-shadow: 2px 6px 53px -14px rgba(143,127,143,1);
+box-shadow: 2px 6px 53px -14px rgba(143,127,143,1);
+
+}
+@mixin radius($radius){
+  -webkit-border-radius:$radius;
+  -moz-border-radius:$radius;
+  border-radius:$radius;
+}
+.body-section--card{
+  display:flex;
+  @extend %card;
+  border:2px solid white;
+  @include radius(8px);
+}
+$cores:(
+  border1:#02b3e4,
+  border2:#02ccba,
+  border3:#a951ed,
+  border4:#ffae0c
+);
+  @each $borda, $cor in $cores{
+    #card-#{$borda}{
+      border-top-color:$cor;
+      }
+    }
