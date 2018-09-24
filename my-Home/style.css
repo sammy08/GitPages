@@ -7,26 +7,25 @@ body{
   background: linear-gradient(to right, #5c2e60 21%,#e55e49 76%); 
   background-repeat: repeat;
   font-family: 'Roboto', sans-serif;
-	color:white;
+  color:white;
 }
 h1{
-	font-size: 2em;
-	font-weight: 100;
-	text-align: center;
+  font-size: 2em;
+  font-weight: 100;
+  text-align: center;
 }
 .body--paragraph{
-	text-align: center;
-	font-size: 1.6rem;
-	font-weight: 100;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 100;
   margin: 16px;
-	color:white;
+  color:white;
 }
 hr{
-	border: 0.5spx solid #fff;
-	width: 20%;
+  border: 0.5spx solid #fff;
+  width: 20%;
 }
 .container{padding-top: 5%;}
-
 img{
   margin: 8px;
 	width: 100px;
