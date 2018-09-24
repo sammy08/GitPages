@@ -9,11 +9,7 @@ body{
   font-family: 'Roboto', sans-serif;
   color:white;
 }
-h1{
-  font-size: 2em;
-  font-weight: 100;
-  text-align: center;
-}
+h1{font-size: 2em;font-weight: 100;text-align: center;}
 .body--paragraph{
   text-align: center;
   font-size: 1.6rem;
@@ -21,31 +17,23 @@ h1{
   margin: 16px;
   color:white;
 }
-hr{
-  border: 0.5spx solid #fff;
-  width: 20%;
-}
+hr{border: 0.5spx solid #fff;width: 20%;}
 .container{padding-top: 5%;}
 img{
   margin: 8px;
-	width: 100px;
-	border-radius: 50%;
-	border: 3px solid #000;
-	cursor: pointer;
-	animation-name: MoveImg;
-	animation-duration: 0.5s;
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid #000;
+  cursor: pointer;
+  animation-name: MoveImg;
+  animation-duration: 0.5s;
 }
 @media  only screen and (max-width:768px){
   body{background: #e55e49;}
-  
   img{width:30%;}
-  
   .container{padding-top: 10%;}
-
   button{display: none;}
-  
   p{font-size: 1.2rem;}
-  
   hr{ width: 40%;}
 }
 
